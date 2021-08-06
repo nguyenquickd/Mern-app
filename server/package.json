@@ -6,9 +6,7 @@
   "scripts": {
     "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon index",
-    "build": "grunt dist",
-    "postinstall": "./node_modules/bower/bin/bower install && npm run build"
+    "server": "nodemon index"
   },
   "author": "",
   "license": "ISC",
