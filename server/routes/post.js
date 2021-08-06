@@ -36,7 +36,7 @@ router.post('/', verifyToken, async (req, res) => {
 			title,
 			description,
 			url: url.startsWith('https://') ? url : `https://${url}`,
-			status: status || 'NEW',
+			status: status || 'TO LEARN',
 			user: req.userId
 		})
 
