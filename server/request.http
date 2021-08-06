@@ -1,0 +1,57 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "qui",
+    "password": "qui"
+}
+
+###
+
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "16145489",
+    "password": "1800"
+}
+###
+
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "quiyeucuc",
+    "password": "1900"
+}
+
+###
+POST  http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTBjMTU5ZTI1YTdlOTBkZmNlNmZhZDciLCJpYXQiOjE2MjgxODM3NTh9.dBMv_7FpGwowRCk3kM7J_aLwTmD91DCbU5DeIcPnkqs
+
+{
+    "title": "task455",
+    "description": "44",
+    "url": "shopee.com",
+    "status": "CLOSED"
+}
+
+###
+GET http://localhost:5000/api/posts 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTBjMTU5ZTI1YTdlOTBkZmNlNmZhZDciLCJpYXQiOjE2MjgxODM3NTh9.dBMv_7FpGwowRCk3kM7J_aLwTmD91DCbU5DeIcPnkqs
+###
+PUT http://localhost:5000/api/posts/60fd7dbd3b1a7d1c541fef7e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGZkNGVlNTdmMTQwZTIwZjhjNTYxM2UiLCJpYXQiOjE2MjcyMjkzMTJ9.yUSTxHVMcVf64vEue6yPFlHWvlX_EX5_JQh1D2M6lZc
+
+{
+    "title": "Vue",
+    "description": "Learn more homies",
+    "url": "vue.org",
+    "status": "In Progress"
+}
+
+###
+DELETE  http://localhost:5000/api/posts/60fd7dbd3b1a7d1c541fef7e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGZkNGVlNTdmMTQwZTIwZjhjNTYxM2UiLCJpYXQiOjE2MjcyMjkzMTJ9.yUSTxHVMcVf64vEue6yPFlHWvlX_EX5_JQh1D2M6lZc
